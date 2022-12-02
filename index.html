@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- 本番バージョン、サイズと速度のために最適化されています -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +9,17 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <b>TEST</b>
+  <div id="app">
+    <nav>
+      <ul>
+        <router-link tag="li" to="/" exact><a>home</a></router-link>
+        <router-link tag="li" to="/foo"><a>foo</a></router-link>
+        <router-link tag="li" to="/bar"><a>bar</a></router-link>
+      </ul>
+    </nav>
+
+    <router-view></router-view>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
