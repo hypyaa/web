@@ -1,0 +1,23 @@
+nav {
+  background-color: #4fc08d;
+}
+ul > li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+.router-link-active > a,
+ul > li > a:hover {
+  background-color: #fff;
+  color: #4fc08d;
+}
